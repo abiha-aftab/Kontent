@@ -37,9 +37,6 @@ class Article extends React.Component {
           </Link>
         </h2>
         <p className="article__description" 
-          data-kontent-add-button
-          data-kontent-add-button-render-position="right"
-          data-kontent-add-button-insert-position="after"
           data-kontent-element-codename="description">{description}</p>
         <Link className="article__readmore" to={slug}>
           Read
