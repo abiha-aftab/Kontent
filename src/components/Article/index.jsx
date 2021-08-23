@@ -17,9 +17,6 @@ class Article extends React.Component {
     return (
       <div className="article" data-kontent-item-id={itemId}>
         <div className="article__meta">
-                    data-kontent-add-button
-          data-kontent-add-button-render-position="right"
-          data-kontent-add-button-insert-position="after"
           <time
             className="article__meta-time"
             dateTime={moment(date).format('MMMM D, YYYY')}
@@ -34,23 +31,14 @@ class Article extends React.Component {
             </Link>
           </span>
         </div>
-        <h2           data-kontent-add-button
-          data-kontent-add-button-render-position="right"
-          data-kontent-add-button-insert-position="after"
+        <h2
 className="article__title" data-kontent-element-codename="title">
           <Link
-                    data-kontent-add-button
-          data-kontent-add-button-render-position="right"
-          data-kontent-add-button-insert-position="after"
           className="article__title-link" to={slug}>
             {title}
           </Link>
         </h2>
-        <p 
-                  data-kontent-add-button
-          data-kontent-add-button-render-position="right"
-          data-kontent-add-button-insert-position="after"
-        className="article__description" 
+        <p className="article__description" 
           data-kontent-element-codename="description">{description}</p>
         <Link className="article__readmore" to={slug}>
           Read
